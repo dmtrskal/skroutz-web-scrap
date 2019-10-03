@@ -3,6 +3,7 @@
 ## pip install xlrd
 ## pip install requests
 
+
 import os,sys
 import requests
 from bs4 import BeautifulSoup
@@ -13,7 +14,7 @@ import datetime
 
 datetime_object = datetime.datetime.now()
 timestampStr = datetime_object.strftime("%d-%b-%Y_%H-%M-%S")
-#print('Current Timestamp : ', timestampStr)
+##print('Current Timestamp : ', timestampStr)
 
 out_filename = "skroutz-shops" + "__" + timestampStr + ".csv"
 
