@@ -13,6 +13,8 @@ Input .xlsx file(e.g Products.xlsx) contains rows with:
 -Price (Maximum desired price)  
 -skroutz URL for the current product 
 
+
+**Requirements**
 Install *Python 3* along with the following libraries:  
 ```
 $ pip install BeautifulSoup4  
