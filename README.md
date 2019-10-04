@@ -11,7 +11,7 @@ $ python checkPrices.py Products.xlsx
 Input .xlsx file(e.g Products.xlsx) contains rows with:  
 -Description (Name of the product)  
 -Price (Maximum desired price)  
--skroutz URL for the current product (Link for the current product)  
+-skroutz URL for the current product 
 
 Install *Python 3* along with the following libraries:  
 ```
