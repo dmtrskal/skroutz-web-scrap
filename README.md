@@ -4,7 +4,7 @@ Skroutz(https://www.skroutz.gr/) Web Scraping
 Returns the skroutz shops in a .csv file that sell  a product below client's desired price.  
 
 **Execution**:  
-$ python checkPrices.py Products.xlsx  
+>$ python checkPrices.py Products.xlsx  
 
 Input .xlsx file(e.g Products.xlsx) contains rows with:  
 -Description (Name of the product)  
