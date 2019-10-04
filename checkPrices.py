@@ -33,11 +33,11 @@ price_limit_list=[]
 no_url_products_list=[]
 for i in range(1,sheet.nrows): 
 	# only Products with URL are searched
-	if not str(sheet.cell_value(i, 3)):
+	if not str(sheet.cell_value(i, 2)):
 		no_url_products_list.append(str(sheet.cell_value(i, 0)))
 	else:
-		quote_page_list.append(str(sheet.cell_value(i, 3)))
-		price_limit_list.append(sheet.cell_value(i, 2))
+		quote_page_list.append(str(sheet.cell_value(i, 2)))
+		price_limit_list.append(sheet.cell_value(i, 1))
 
 
 if len(no_url_products_list) != 0:
