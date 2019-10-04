@@ -1,5 +1,5 @@
 # skroutz-web-scrap
-Skroutz(https://www.skroutz.gr/) Web Scraping
+[Skroutz](https://www.skroutz.gr/) Web Scraping
 
 Returns the skroutz shops in a .csv file that sell  a product below client's desired price.  
 
