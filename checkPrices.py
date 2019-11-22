@@ -42,7 +42,7 @@ for i in range(1,sheet.nrows):
 
 if len(no_url_products_list) != 0:
 	print(30* "*")
-	print("Prodcts without URL = " + str(no_url_products_list) + "\n")
+	print("Products without URL = " + str(no_url_products_list) + "\n")
 	print(30* "*")
 
 # Read HTML page and create output file
