@@ -72,6 +72,7 @@ try:
 				
 				#Parse Price
 				price = price_box.text.strip() # strip() is used to remove starting and trailing
+				price = price.replace(".","")
 				str_price = re.findall("\d+\,\d+", price) # Price with , as floating point
 				str_price = str_price[0]
 				
