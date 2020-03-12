@@ -63,7 +63,8 @@ try:
 
 			all_name_box = soup.find_all("div", attrs={"class": "shop-name"})
 			all_price_box = soup.find_all("div", attrs={"class": "price"})
-			all_url_box = soup.find_all("div", attrs={"class": "description"})
+			#all_url_box = soup.find_all("div", attrs={"class": "description"})
+			all_url_box = soup.find_all("div", attrs={"class": "price"}) # get url from price 
 			
 			writer.writerow([title, price_limit])
 			for name_box, price_box,url_box in zip(all_name_box, all_price_box, all_url_box):
@@ -89,6 +90,8 @@ try:
 					writer.writerow([name, str_price, url])
 			writer.writerow(['\n'])
 except Exception as e:
-	print('ERROR FOUND: ' + str(e))
 	print("HTTP status code  = {}({})".format(page.status_code, requests.status_codes._codes[page.status_code][0]))
-	os.remove(out_filename)
+	if (page.status_code != 200):
+		os.remove(out_filename)
+	else:
+		print('ERROR FOUND while searching product ' + '"' + title + '"' + ' : ' + str(e))
